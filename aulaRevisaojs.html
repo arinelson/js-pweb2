@@ -1,0 +1,90 @@
+<meta charset="UTF-8">
+<script>
+    //mostra um alerta com a mensagem de parâmetro
+    //alert("podemos fazer mais com JavaScript!");
+
+    /*mostra a mensagem de parâmetro
+    document.write("Minha idade é: ");
+    document.write(21);
+    */
+
+    /*Declarando variável; concatenando tags, strings e números e mostando-os
+    var ano = 2012;
+    document.write("<h1>Eu nasci em : " + (ano - 25) + "</h1><br>");
+    */
+    
+    //Declarando uma funcao no JS
+    function mostra(frase){
+        document.write(frase + "<br>")
+    };
+    /*
+    Chamando a funcao
+    var ano = 2012;
+    mostra("Eu nasci em: " + (ano - 25));
+    */
+
+    /*
+    Mostra as mensagens e um mostra no console do navegador
+    document.write("Arinelson " + "e ");
+    document.write("Josué");
+    console.log("esta mensagem aparece apenas no log");
+    */
+
+    /*var peso = 72;
+    var altura = 1.7;
+    var imc = peso / (altura * altura);
+    mostra("Meu IMC é: " + Math.round(imc));
+    */
+
+    /*
+    var nome = prompt("Boa tarde!, Qual é o seu nome?");
+    document.write("Bem vindo, " + nome + "<br>");
+
+    var idade = prompt(nome + ", quantos anos você tem?");
+    document.write(nome + " tem " + idade + " anos.");
+    */
+    /*
+    var vitorias = prompt("quantos jogos o Flamengo venceu?");
+    var empates = prompt("quantos jogos o Flamengo empatol?");
+
+    var pontos = (parseInt(vitorias)*3) + parseInt(empates);
+    if(pontos > 42){
+        mostra("O Flamengo não será rebaixado");
+    }else{
+        mostra("Lamento imformar. mas O fLAMENGO NÃO SERÁ REBAIXADO!");
+    }
+    */
+
+    /*
+    O sorteando numeros aleatorios de 1 a 10
+    var numeroPensado = Math.round(Math.random()*10);
+    var chute = prompt("já pensei.Qual vc acha que é");
+    if(chute ==numeroPensado){
+        mostra("Uauu! vc acertou,pois eu pensei no" + numeroPensado);
+    }else{
+        mostra("Erooou! eu tinmha pensado no " + numeroPensado);
+    }
+    */
+
+    /*
+    //usando a variavel de repetição
+    var anoDeCopa = 1930;
+    while(anoDeCopa <= 2022){
+        alert(anoDeCopa + " tem copa!");
+        anoDeCopa = anoDeCopa + 4;
+    }
+    */
+        /*
+        //usando a variavel de repetição for
+        var numero = 7;
+        for (var multiplicador = 1; multiplicador <= 10; multiplicador++){
+            mostra(multiplicador * numero)
+        }
+        */
+        for(var linha = 0; linha < 3 ; linha++){
+            for(var coluna = 0; coluna < 5; coluna++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+</script>
