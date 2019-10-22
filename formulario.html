@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="formulario.js"></script>
     <title>Formulário</title>
 
     <style>
@@ -55,6 +56,7 @@
             <small>Informações pessoais</small>
 
             <hr/>
+	    <form method="post" action="" onSubmit="return ( verifica() )" name="frmEnvia">
             <label for="nome">Nome:</label>
             <input name="nome" type="text" size="30" maxlength="30" placeholder="Ex.. Estefane" />
             <br/>
@@ -62,10 +64,10 @@
             <input name="email" type="text" size="30" maxlength="30" placeholder="Ex.. ...@gmail.com" />
             <br/>
             <label for="sobrenome">Senha:</label>
-            <input name="email" type="password" size="30" maxlength="30">
+            <input name="senha1" type="password" size="30" maxlength="30">
             <br/>
             <label for="sobrenome">Repita sua senha:</label>
-            <input name="senha" type="password" size="30" maxlength="30">
+            <input name="senha2" type="password" size="30" maxlength="30">
             <br/>
             <br/>
             <label for="modulo"> Módulo</label>
@@ -91,10 +93,12 @@
             <br/>
 
             <div class="botao">
-                <input value="Salvar" type="submit" />
+                <input value="Salvar" type="submit" value="Validar" onClick="validarSenha()"/>
 
                 <input type="reset" value="Limpar">
             </div>
+
+	</form>
 
         </div>
 
